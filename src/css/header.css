@@ -1,0 +1,12 @@
+#buy_dropdown{
+    width: 250px;
+}
+
+#nav_buy_btn{
+    color: black;
+    background-color: white;
+    border:none;
+}    
+#nav_buy_btn:hover{
+    color:blue;
+}
