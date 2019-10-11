@@ -1,11 +1,10 @@
 import React from 'react';
-import {Button, Dropdown, ButtonGroup} from 'react-bootstrap';
+import {Button, Dropdown, ButtonGroup, Nav} from 'react-bootstrap';
 
 class BuyMenu extends React.Component{
     render(){
         return <Dropdown as={ButtonGroup}>
-            <Button id="nav_buy_btn" variant="success">Buy</Button>
-        
+            <Nav.Link href="#Buy">Buy</Nav.Link>
             <Dropdown.Toggle split id="nav_buy_btn" variant="success"  />
         
             <Dropdown.Menu id="buy_dropdown">

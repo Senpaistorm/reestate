@@ -1,0 +1,20 @@
+#row_main_btn{
+    display: flex;
+    width: 1000px;
+    margin: auto;
+}
+
+.main_options_btn{
+    flex-basis: 280px;
+    padding: 24px;
+    text-align: center;
+    -moz-box-flex: 2;
+    flex-grow: 2;
+    height: 400px;
+    width: 354px;
+    background: white;
+    border-radius: 2px;
+    margin: 30px;
+    box-shadow: rgb(209, 209, 213) 0px 0px 4px;
+    border: medium none;
+}

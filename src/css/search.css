@@ -1,0 +1,19 @@
+#search_container{
+    max-width:100%;
+    height: 800px;
+    background-image: url("../media/08_Full-Res_1414-Burgundy.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#search_form{
+    display:flex;
+    width: 600px;
+    margin:auto;
+}
+
+
+#search_slogan{
+    padding-top: 100px;
+    margin-bottom: 100px;
+}
