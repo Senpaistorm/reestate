@@ -10,3 +10,15 @@
 #nav_buy_btn:hover{
     color:blue;
 }
+
+#nav_sell_btn{
+    color: black;
+    background-color: white;
+    border:none;
+}
+
+#nav_rent_btn{
+    color: black;
+    background-color: white;
+    border:none;
+}

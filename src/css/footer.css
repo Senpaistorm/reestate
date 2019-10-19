@@ -1,0 +1,13 @@
+#footer_container{
+    max-width: 1000px;
+    margin:auto;
+}
+
+#footer_bg{
+    background-image: url("../media/footer-houses.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height:200px;
+    width: 1000px;
+}

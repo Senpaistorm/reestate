@@ -1,11 +1,11 @@
 import React from 'react';
-import {Button, Dropdown, ButtonGroup, Container} from 'react-bootstrap';
+import {Button, Dropdown, ButtonGroup, Container, Nav} from 'react-bootstrap';
 
 class RentMenu extends React.Component{
     render(){
         return <Dropdown as={ButtonGroup}>
-            <Button >Rent</Button>
-            <Dropdown.Toggle split   />
+            <Nav.Link href="#rent">Rent</Nav.Link>
+            <Dropdown.Toggle split id="nav_rent_btn"  />
             <Dropdown.Menu id="rent_dropdown">
             <Dropdown.Header>Search for rentals</Dropdown.Header>  
             <Dropdown.Item href="#/action-1">Rental buildings</Dropdown.Item>
