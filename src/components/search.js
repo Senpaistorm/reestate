@@ -5,12 +5,28 @@ import Button from 'react-bootstrap/Button';
 import '../css/search.css';
 
 class Search extends Component {
+    constructor(props){
+        super(props);
+
+        this.state={
+            searchValue: '',
+        }
+    }
+
+    handleInputChange = (e) =>{
+        console.log(e.target.value);
+        this.setState({
+            searchValue: e.target.value
+        })
+    }
+
     render(){
         return  <div className="container" id="search_container">
             <h2 id="search_slogan">Find your next dream place here.</h2>
                 <Form id="search_form">
-                    <FormControl inline type="text" placeholder="Enter an address, neighborhood, city, or ZIP code." size="lg" />
-                    <Button inline variant="outline-success">Search</Button>
+                    <FormControl onChange={this.handleInputChange} value={this.state.searchValue}
+                 type="text" placeholder="Enter an address, neighborhood, city, or ZIP code." size="lg" />
+                    <Button variant="outline-success">Search</Button>
                 </Form>
             </div>        
     }

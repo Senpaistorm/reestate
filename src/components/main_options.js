@@ -16,9 +16,9 @@ class Main_options extends PureComponent {
         return (
             <div id="main_ops_container">
                 <div id="row_main_btn">
-                    <div class="main_options_btn">Buy a home</div>
-                    <div class="main_options_btn">Sell a home</div>
-                    <div class="main_options_btn">Rent a home</div>
+                    <div className="main_options_btn">Buy a home</div>
+                    <div className="main_options_btn">Sell a home</div>
+                    <div className="main_options_btn">Rent a home</div>
                 </div>
             </div>
         )

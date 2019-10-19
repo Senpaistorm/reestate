@@ -25,3 +25,50 @@
 .container{
   height: 650px;
 }
+
+.navbar{
+  height: 70px;
+  width:100%;
+}
+
+ul{
+  display:flex;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+#navbar_ul{
+  margin:auto;
+}
+
+li{
+  margin: 10px;
+}
+
+.link{
+  color: rgb(112, 112, 112);  
+  text-decoration: none;
+}
+
+li a{
+  text-decoration: none;
+}
+
+#homeTitle{
+  font-size: 2.2rem;
+  padding-right:40px;
+  padding-left:40px;
+  text-decoration: none;
+}
+
+.homes_main{
+  display: flex;
+}
+
+#buy_btn{
+  text-decoration: none;
+}

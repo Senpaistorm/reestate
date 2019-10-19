@@ -1,10 +1,14 @@
 import React from 'react';
 import {Button, Dropdown, ButtonGroup, Nav} from 'react-bootstrap';
+import {Link} from 'react-router-dom';
 
 class BuyMenu extends React.Component{
     render(){
         return <Dropdown as={ButtonGroup}>
-            <Nav.Link href="#Buy">Buy</Nav.Link>
+            <Link to="/homes">
+                Buy
+            </Link>
+            
             <Dropdown.Toggle split id="nav_buy_btn" variant="success"  />
         
             <Dropdown.Menu id="buy_dropdown">
