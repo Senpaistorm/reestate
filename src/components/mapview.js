@@ -16,15 +16,13 @@ class Mapview extends React.Component {
 
       
     render() {
-        return (
-            <div id="map_container">            
+        return (        
             <Map
                 google={this.props.google}
                 zoom={8}
                 style={this.state.style}
                 initialCenter={{ lat: 47.444, lng: -122.176}}
             />
-            </div>
         );
     }
 }

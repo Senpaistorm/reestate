@@ -1,6 +1,6 @@
 #row_main_btn{
     display: flex;
-    width: 1000px;
+    max-width: 1000px;
     margin: auto;
 }
 
@@ -17,4 +17,45 @@
     margin: 30px;
     box-shadow: rgb(209, 209, 213) 0px 0px 4px;
     border: medium none;
+}
+
+.main_options_btn:hover{
+    border: medium 1px;
+}
+
+#main_ops_container{
+    margin: 50px 0;
+}
+
+#b1{
+    text-decoration: none;
+}
+#b1:hover{
+    box-shadow: rgb(209, 209, 213) 0px 0px 10px;
+}
+#b2{
+    text-decoration: none;
+}
+#b2:hover{
+    box-shadow: rgb(209, 209, 213) 0px 0px 10px;
+}
+#b3{
+    text-decoration: none;
+}
+#b3:hover{
+    box-shadow: rgb(209, 209, 213) 0px 0px 10px;
+}
+
+/* Medium screens */
+@media all and (max-width: 800px) {
+  #row_main_btn {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+  }
+  .main_options_btn{
+      width: 75%;
+      margin:auto;
+      margin-top: 20px;
+      
+  }
 }

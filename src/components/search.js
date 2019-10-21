@@ -26,7 +26,7 @@ class Search extends Component {
                 <Form id="search_form">
                     <FormControl onChange={this.handleInputChange} value={this.state.searchValue}
                  type="text" placeholder="Enter an address, neighborhood, city, or ZIP code." size="lg" />
-                    <Button variant="outline-success">Search</Button>
+                    <Button id="searchBtn" variant="outline-success"><i class="material-icons md-36">search</i></Button>
                 </Form>
             </div>        
     }

@@ -1,11 +1,11 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 import Header from './components/header';
 import Footer from './components/footer';
 import Search from './components/search';
 import Mapview from './components/mapview';
+import Main from './components/main';
 import Main_options from './components/main_options';
 
 import {
@@ -54,24 +54,7 @@ function App() {
           </ul>
         </nav>
 
-
-        <Switch>
-          <Route path="/homes">
-            <div>some options</div>
-            <div className="homes_main">
-              <Mapview className="gmap"></Mapview>
-              <p>list view</p>
-            </div>
-            
-          </Route>
-
-          <Route path="/">
-            {/* <Header></Header> */}
-            <Search></Search>
-            <Main_options></Main_options>
-            <Footer></Footer>
-          </Route>
-        </Switch>
+        <Main />
       </div>
     </Router>
   );
