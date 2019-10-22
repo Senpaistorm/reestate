@@ -2,3 +2,18 @@
     display:flex;
     flex-direction: row;
 }
+
+.flex-container{
+    display:flex;
+    flex-direction: row;
+}
+
+#home_search_form{
+    display:flex;
+}
+
+#homes_search_container{
+    padding: 5px;
+    border-top: 0.5px solid rgb(206, 206, 206);
+    border-bottom: 0.5px solid rgb(206, 206, 206);
+}

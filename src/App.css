@@ -72,3 +72,7 @@ li a{
 #buy_btn{
   text-decoration: none;
 }
+
+.disabled{
+  text-decoration: none;
+}

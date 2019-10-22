@@ -1,12 +1,7 @@
 import React from 'react';
 import './App.css';
 
-import Header from './components/header';
-import Footer from './components/footer';
-import Search from './components/search';
-import Mapview from './components/mapview';
 import Main from './components/main';
-import Main_options from './components/main_options';
 
 import {
   BrowserRouter as Router,
@@ -31,7 +26,7 @@ function App() {
               <Link className="link" to="/sell">Sell</Link>
             </li>
             <li>
-              <Link className="link" to="/users">Home Loans</Link>
+              <Link className="link disabled" to="/users">Home Loans</Link>
             </li>
             <li>
               <Link id="homeTitle" to="/">Reestate</Link>

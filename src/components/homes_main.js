@@ -1,5 +1,7 @@
 import React from 'react';
 import Mapview from './mapview';
+import Listview from './listview';
+import Homes_search from './homes_search';
 
 class Homes_main extends React.Component {
     constructor(props) {
@@ -12,10 +14,12 @@ class Homes_main extends React.Component {
 
     render() {
         return (
-            <div className="homes_main">
-                <div><Mapview /></div>
-                
-                <p>list view</p>
+            <div className="homes_container">
+                <Homes_search />
+                <div className="homes_main">
+                    <Mapview />
+                    <Listview/>
+                </div>
             </div>
         )
     }
