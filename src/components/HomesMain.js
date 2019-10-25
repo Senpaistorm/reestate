@@ -1,9 +1,9 @@
 import React from 'react';
-import Mapview from './mapview';
-import Listview from './listview';
-import Homes_search from './homes_search';
+import Mapview from './Mapview';
+import Listview from './Listview';
+import HomeSearch from './HomeSearch';
 
-class Homes_main extends React.Component {
+class HomesMain extends React.Component {
     constructor(props) {
         super(props)
 
@@ -15,7 +15,7 @@ class Homes_main extends React.Component {
     render() {
         return (
             <div className="homes_container">
-                <Homes_search />
+                <HomeSearch />
                 <div className="homes_main">
                     <Mapview />
                     <Listview/>
@@ -25,4 +25,4 @@ class Homes_main extends React.Component {
     }
 }
 
-export default Homes_main
+export default HomesMain

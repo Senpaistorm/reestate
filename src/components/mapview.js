@@ -1,4 +1,4 @@
-import React, {Component, createRef} from 'react';
+import React, { createRef} from 'react';
 import '../css/home_browse.css';
 
 class Mapview extends React.Component {

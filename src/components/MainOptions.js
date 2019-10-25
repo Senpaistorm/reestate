@@ -1,9 +1,9 @@
 import React from 'react'
-import {Router, Link} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 
 import '../css/main_options.css';
 
-function Main_options(){
+function MainOptions(){
 
     const buttons= [
                 {
@@ -43,4 +43,4 @@ function Main_options(){
     
 }
 
-export default Main_options
+export default MainOptions

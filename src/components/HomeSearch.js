@@ -1,8 +1,8 @@
 import React from 'react'
-import {Form, Button, FormControl} from 'react-bootstrap'
+import {Button} from 'react-bootstrap'
 import '../css/homes_main.css'
 
-class Homes_search extends React.Component {
+class HomeSearch extends React.Component {
     constructor(props) {
         super(props)
 
@@ -17,10 +17,10 @@ class Homes_search extends React.Component {
 
     render() {
         return (
-            <div id="homes_search_container" class="flex-container">
+            <div id="homes_search_container" className="flex-container">
                 <input id="homes_search_bar" onChange={this.handleInputChange} value={this.state.searchValue}
                  type="text" placeholder="" size="lg" />
-                <Button id="searchBtn" variant="outline-success"><i class="material-icons md-36">search</i></Button>
+                <Button id="searchBtn" variant="outline-success"><i className="material-icons md-36">search</i></Button>
                 <button>For sale</button>
                 <button>Price</button>
                 <button>Beds</button>
@@ -33,4 +33,4 @@ class Homes_search extends React.Component {
     }
 }
 
-export default Homes_search
+export default HomeSearch

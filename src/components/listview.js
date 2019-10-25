@@ -1,5 +1,5 @@
 import React from 'react'
-import Footer from './footer'
+import Footer from './Footer'
 import '../css/footer.css'
 
 class Listview extends React.Component {

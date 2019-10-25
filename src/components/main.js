@@ -1,9 +1,11 @@
 import React from 'react'
-import Search from './search';
-import Main_options from './main_options';
-import Footer from './footer';
-import Homes_main from './homes_main';
+import Search from './Search';
+import MainOptions from './MainOptions';
+import Footer from './Footer';
+import HomesMain from './HomesMain';
 import {Switch, Route} from 'react-router-dom';
+import Profile from './Profile';
+import PrivateRoute from "./PrivateRoute";
 
 class Main extends React.Component {
     constructor(props) {
@@ -18,12 +20,12 @@ class Main extends React.Component {
         return (
             <Switch>
                 <Route path="/homes">
-                    <Homes_main />
+                    <HomesMain />
                 </Route>
-
+                <PrivateRoute path="/profile" component={Profile} />
                 <Route path="/">
                     <Search />
-                    <Main_options />
+                    <MainOptions />
                     <Footer />
                 </Route>
             </Switch>
