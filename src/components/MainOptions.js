@@ -27,7 +27,7 @@ function MainOptions(){
                 }
             ];
     const buttonsList = buttons.map((btn) =>{
-        return <Link id={btn.id} key={btn.id} to={btn.link} className="main_options_btn">
+        return <Link id={btn.id} key={btn.id} to={btn.link} className="col main_options_btn">
                     <h2>{btn.label}</h2>
                     <div>{btn.description}</div>
                 </Link>
@@ -35,7 +35,7 @@ function MainOptions(){
     
     return (
         <div id="main_ops_container">
-            <div id="row_main_btn">
+            <div className="row" id="row_main_btn">
                 {buttonsList}
             </div>
         </div>

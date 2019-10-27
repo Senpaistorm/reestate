@@ -22,7 +22,7 @@ class Search extends Component {
 
     render(){
         return  <div className="container" id="search_container">
-            <h2 id="search_slogan">Find your next dream place here.</h2>
+                <h2 id="search_slogan">Find your next dream place here.</h2>
                 <Form id="search_form">
                     <FormControl onChange={this.handleInputChange} value={this.state.searchValue}
                  type="text" placeholder="Enter an address, neighborhood, city, or ZIP code." size="lg" />
