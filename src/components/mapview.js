@@ -1,5 +1,4 @@
 import React, { createRef} from 'react';
-import '../css/home_browse.css';
 
 class Mapview extends React.Component {
     constructor(props) {
@@ -17,7 +16,7 @@ class Mapview extends React.Component {
             zoom: 16,
             center: {
                 lat: 43.642567,
-                lng: -79.387054,
+                lng: -79.387000,
             },
             disableDefaultUI: true,
         })
@@ -42,7 +41,7 @@ class Mapview extends React.Component {
     render() {
         return (        
             <div id="google-map" ref={this.googleMapRef} 
-                style={{width: '50vw', height:'600px'}}>
+                style={{width: '100%', height:'100%'}}>
             </div>
         );
     }

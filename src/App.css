@@ -1,6 +1,8 @@
 .App {
   text-align: center;
   background-color: #F9F9FB;
+  height:100vh;
+  overflow:hidden;
 }
 
 .App-logo {
@@ -20,10 +22,6 @@
 
 .App-link {
   color: #09d3ac;
-}
-
-.container{
-  height: 650px;
 }
 
 .navbar{
@@ -57,10 +55,6 @@ li{
   padding-right:40px;
   padding-left:40px;
   text-decoration: none;
-}
-
-.homes_main{
-  display: flex;
 }
 
 #buy_btn{

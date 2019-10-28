@@ -15,20 +15,25 @@ class HomeSearch extends React.Component {
         }
     }
 
+    handleInputChange = (e) =>{
+        this.setState({searchValue: e.target.value});
+    }
+
     render() {
         return (
-            <div id="homes_search_container" className="flex-container">
-                <input id="homes_search_bar" onChange={this.handleInputChange} value={this.state.searchValue}
-                 type="text" placeholder="" size="lg" />
-                <Button id="searchBtn" variant="outline-success"><i className="material-icons md-36">search</i></Button>
-                <button>For sale</button>
-                <button>Price</button>
-                <button>Beds</button>
-                <button>Home Type</button>
-                <button>More</button>
-                <button>Save Search</button>
+            <div id="homes_search_container" className="container">
+                <div className="row">
+                    <input id="homes_search_bar" onChange={this.handleInputChange} value={this.state.searchValue}
+                    type="text" placeholder="" size="lg" />
+                    <button className="btn btn-primary" id="searchBtn"><i className="material-icons md-36">search</i></button>
+                    <button className="btn btn-primary">For sale</button>
+                    <button className="btn btn-primary">Price</button>
+                    <button className="btn btn-primary">Beds</button>
+                    <button className="btn btn-primary">Home Type</button>
+                    <button className="btn btn-primary">More</button>
+                    <button className="btn btn-primary">Save Search</button>
+                </div>
             </div>
-            
         )
     }
 }

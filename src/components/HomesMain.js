@@ -8,18 +8,24 @@ class HomesMain extends React.Component {
         super(props)
 
         this.state = {
-            
+            data: []
         }
     }
 
     render() {
         return (
-            <div className="homes_container">
-                <HomeSearch />
-                <div className="homes_main">
-                    <Mapview />
-                    <Listview/>
-                </div>
+            <div className="search-page-container">
+            <HomeSearch />
+            <div id="homes_main_container" className="container">
+                    <div id="listview" >
+                        <Listview props={this.data}/>
+                    </div>
+                    <div id="mapview" >
+                        <Mapview props={this.data}/>
+                    </div>
+                    
+
+            </div>
             </div>
         )
     }

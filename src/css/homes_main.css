@@ -1,19 +1,55 @@
-.homes_main{
-    display:flex;
-    flex-direction: row;
-}
-
-.flex-container{
-    display:flex;
-    flex-direction: row;
-}
-
 #home_search_form{
     display:flex;
+}
+
+.search-page-container{
+    height:100%;
 }
 
 #homes_search_container{
     padding: 5px;
     border-top: 0.5px solid rgb(206, 206, 206);
     border-bottom: 0.5px solid rgb(206, 206, 206);
+    max-width:100%;
+    margin:0;
+}
+
+#homes_main_container{
+    display: flex;
+    min-width:320px;
+    flex-direction: row-reverse;
+    height: 100%;
+    margin:0;
+    max-width:100%;
+}
+
+.container{
+    padding:0;
+    margin:0;
+}
+
+#mapview{
+    overflow:hidden;
+    padding:0;
+    flex: 1 1 100%;
+    flex-direction:column;
+    position:relative;
+}
+
+#listview{
+    overflow:hidden;
+    padding:0;
+    width: 750px;
+    flex: 0 0 750px;
+    overflow-y: auto;
+    box-shadow: -2px 2px 5px 0 rgba(0,0,0,.4);
+    z-index:1;
+}
+
+.btn{
+    margin: 0 3px;
+}
+
+#list_display_c{
+    padding:0;
 }
