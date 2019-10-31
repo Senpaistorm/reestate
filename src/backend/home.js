@@ -7,11 +7,16 @@ const HomeSchema = new Schema(
   {
     id: Number,
     address: String,
+    country: String,
+    province: String,
+    city: String,
     bd: Number,
     ba: Number,
     sqft: Number,
     value: Number,
-    
+    houseType: String,
+    listingType: String,
+    posterId: String
   },
   { timestamps: true }
 );

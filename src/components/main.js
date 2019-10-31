@@ -6,6 +6,8 @@ import HomesMain from './HomesMain';
 import {Switch, Route} from 'react-router-dom';
 import Profile from './Profile';
 import PrivateRoute from "./PrivateRoute";
+import SellPosting from "./SellPosting";
+import RentPosting from "./RentPosting";
 
 class Main extends React.Component {
     constructor(props) {
@@ -22,6 +24,8 @@ class Main extends React.Component {
                 <Route path="/homes">
                     <HomesMain />
                 </Route>
+                <PrivateRoute path="/sell" component={SellPosting}  />
+                <PrivateRoute path="/list_rental" component={RentPosting}  />
                 <PrivateRoute path="/profile" component={Profile} />
                 <Route path="/">
                     <Search />

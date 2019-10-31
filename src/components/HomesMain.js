@@ -15,17 +15,15 @@ class HomesMain extends React.Component {
     render() {
         return (
             <div className="search-page-container">
-            <HomeSearch />
-            <div id="homes_main_container" className="container">
-                    <div id="listview" >
-                        <Listview props={this.data}/>
-                    </div>
-                    <div id="mapview" >
-                        <Mapview props={this.data}/>
-                    </div>
-                    
-
-            </div>
+                <HomeSearch />
+                <div id="homes_main_container" className="container">
+                        <div id="listview" >
+                            <Listview props={this.data}/>
+                        </div>
+                        <div id="mapview" >
+                            <Mapview props={this.data}/>
+                        </div>
+                </div>
             </div>
         )
     }

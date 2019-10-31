@@ -32,7 +32,7 @@ app.use(logger('dev'));
 // this is our get method
 // this method fetches all available data in our database
 router.get('/getData', (req, res) => {
-  Data.find((err, data) => {
+  Home.find((err, data) => {
     if (err) return res.json({ success: false, error: err });
     return res.json({ success: true, data: data });
   });
@@ -60,24 +60,28 @@ router.get('/getData', (req, res) => {
 
 // // this is our create methid
 // // this method adds new data in our database
-// router.post('/putData', (req, res) => {
-//   let data = new Data();
+router.post('/putData', (req, res) => {
+  let home = new Home();
 
-//   const { id, message } = req.body;
+  const data = req.body;
 
-//   if ((!id && id !== 0) || !message) {
-//     return res.json({
-//       success: false,
-//       error: 'INVALID INPUTS',
-//     });
-//   }
-//   data.message = message;
-//   data.id = id;
-//   data.save((err) => {
-//     if (err) return res.json({ success: false, error: err });
-//     return res.json({ success: true });
-//   });
-// });
+  if ((!data.id && data.id !== 0)) {
+    return res.json({
+      success: false,
+      error: 'INVALID INPUTS',
+    });
+  }
+  home.id = data.id;
+  home.address = data.address;
+  home.bd = data.bd;
+  home.ba = data.ba;
+  home.sqft = data.sqft;
+  home.value = data.value;
+  home.save((err) => {
+    if (err) return res.json({ success: false, error: err });
+    return res.json({ success: true });
+  });
+});
 
 // append /api for our http requests
 app.use('/api', router);

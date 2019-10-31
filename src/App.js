@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 
 import Main from './components/Main';
+import axios from 'axios';
 
 import {
   BrowserRouter as Router,
@@ -12,6 +13,13 @@ import { useAuth0 } from "./react-auth0-spa";
 function App() {
   const { loading } = useAuth0();
 
+  
+  let getData = () =>{
+    fetch('http://localhost:3001/api/getData')
+    .then((data) => data.json())
+    .then((res) => (res));
+  }
+  console.log(getData());
   if (loading) {
     return (
       <div>Loading...</div>
@@ -19,7 +27,7 @@ function App() {
   }
 
   return (
-    <Router>    
+    <Router>
       <div className="App">
         <Nav />
 
@@ -28,5 +36,7 @@ function App() {
     </Router>
   );
 }
+
+
 
 export default App;

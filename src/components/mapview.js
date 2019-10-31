@@ -41,7 +41,7 @@ class Mapview extends React.Component {
     render() {
         return (        
             <div id="google-map" ref={this.googleMapRef} 
-                style={{width: '100%', height:'100%'}}>
+                style={{width: '100%', height:'85vh', overflow:'hidden'}}>
             </div>
         );
     }

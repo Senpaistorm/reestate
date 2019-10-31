@@ -1,8 +1,6 @@
 .App {
   text-align: center;
   background-color: #F9F9FB;
-  height:100vh;
-  overflow:hidden;
 }
 
 .App-logo {
@@ -63,8 +61,4 @@ li{
 
 .disabled{
   text-decoration: none;
-}
-
-#navbarNav{
-  background-color: white;
 }
